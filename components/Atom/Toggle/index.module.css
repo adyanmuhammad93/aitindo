@@ -1,0 +1,19 @@
+.toggle-path {
+  transition: background 0.3s ease-in-out;
+}
+.toggle-circle {
+  top: -0.2rem;
+  left: -0.1rem;
+  transition: all 0.3s ease-in-out;
+}
+input:checked ~ .toggle-circle {
+  transform: translateX(100%);
+  background-color:#43D5B0;
+}
+input#togle-2:checked ~ .toggle-circle {
+  transform: translateX(100%);
+  background-color:#212047 !important;
+}
+input:checked ~ .toggle-path {
+  background-color:#EEEEEE;
+}
